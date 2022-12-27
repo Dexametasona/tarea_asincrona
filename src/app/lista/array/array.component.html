@@ -1,0 +1,18 @@
+<div class="m-auto">
+  <div class="d-flex align-items-center">
+    <div class="flex-grow-1">
+      <input type="text" #element class="form-control">
+    </div>
+    <div>
+      <button (click)="anadir(element.value)" id="boton">ADD</button>
+    </div>
+    
+  </div>
+  <div>
+    <ul *ngFor="let i of idiomas">
+      <li>{{i}}</li>
+    </ul>
+    
+  </div>
+
+</div>
